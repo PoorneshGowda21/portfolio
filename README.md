@@ -1,19 +1,22 @@
 # 🚀 Poornesh Gowda G Y — Personal Portfolio & Showcase
 
+🌐 **Live Website**: [https://poornesportfolio.vercel.app/](https://poornesportfolio.vercel.app/)
+
 Welcome to my personal developer portfolio! This repository contains the source code for my interactive, responsive, and modern developer portfolio website, designed to showcase my engineering projects, technical skills in **Cloud Computing, DevOps, and Full-Stack Development**, and direct contact links.
 
 ---
 
 ## ✨ Features & Highlights
 
+- 🌐 **Live Website**: Hosted on Vercel at [https://poornesportfolio.vercel.app/](https://poornesportfolio.vercel.app/)
 - 🌌 **Interactive Cyber-Aurora Canvas**: Custom HTML5 Canvas particle constellation mesh that dynamically moves and responds to mouse interaction.
 - 💎 **Glassmorphism UI Design System**: Dark/Light mode theme toggle with sleek glassmorphism cards, glowing top accent borders, and smooth micro-animations.
 - 📱 **100% Mobile & Cross-Device Responsive**: Tested and optimized for iOS (iPhone Safari), Android, tablets, and desktop displays without layout clipping or text overlap.
 - 🛠️ **Featured Projects Showcase**: Highlights 6 key engineering projects complete with live deployment links (Vercel) and GitHub repository links:
-  - **MarketPulse — Stock Market Platform** (Live Demo & Repo)
-  - **Banking System** (Live Demo & Repo)
-  - **AI Disaster Alert System** (Repo)
-  - **AWS CI/CD Pipeline** (Repo)
+  - **MarketPulse — Stock Market Platform** ([Live Demo](https://market-pulse-real-time-stock-market.vercel.app/) & Repo)
+  - **Banking System** ([Live Demo](https://bnaking-system.vercel.app/) & [Repo](https://github.com/PoorneshGowda21/Bnaking_system))
+  - **AI Disaster Alert System** ([Repo](https://github.com/PoorneshGowda21/ai-disaster-alert-system))
+  - **AWS CI/CD Pipeline** ([Repo](https://github.com/PoorneshGowda21/AWS-CI-CD-pipeline-))
   - **Crop Yield Prediction & Cloud Benchmarking** (Repo)
   - **VProfile GitOps Deployment** (Repo)
 - 📄 **Embedded Resume**: Direct one-click access to view and download my official PDF resume (`poornesh_resume.pdf`).
@@ -26,7 +29,7 @@ Welcome to my personal developer portfolio! This repository contains the source 
 ```text
 port-foli/
 ├── index.html           # Main semantic HTML5 structural document
-├── style.css            # Custom CSS design system, responsive media queries & glassmorphism
+├── style.css            # Custom CSS design system, responsive media queries & glassmorphic UI
 ├── script.js             # Canvas particle animation engine, theme toggle & interaction logic
 ├── vercel.json          # Production deployment configuration for Vercel
 ├── pornesh photo.jpeg   # Profile photo
@@ -73,9 +76,10 @@ You can run this project locally on your machine in just a few seconds:
 
 ## 🌐 Live Deployment
 
-Deploying to Vercel is seamless:
-1. Connect this repository to [Vercel](https://vercel.com).
-2. Click **Deploy**. Vercel will automatically detect the static configuration (`vercel.json`) and publish your site!
+This portfolio is deployed live on Vercel:  
+🔗 **[https://poornesportfolio.vercel.app/](https://poornesportfolio.vercel.app/)**
+
+Automatic deployment is configured via `vercel.json`. Any new push to the `main` branch automatically deploys to Vercel in real-time.
 
 ---
 
