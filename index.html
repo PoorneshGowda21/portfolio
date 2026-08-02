@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poornesh Gowda G Y | Portfolio</title>
+  <meta name="description" content="Portfolio of Poornesh Gowda G Y - Information Science Engineering student skilled in AWS, Docker, Kubernetes, DevOps, and full-stack development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">&lt;Poornesh/&gt;</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" id="nav-certs">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="poornesh_resume.pdf" target="_blank" rel="noopener" class="btn btn-outline" id="resume-btn">Resume</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon" id="theme-icon">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero section" id="hero">
+    <div class="hero-bg-blur"></div>
+    <div class="hero-bg-blur hero-bg-blur-2"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello World! 👋</p>
+        <h1 class="hero-name">I'm <span class="gradient-text">Poornesh Gowda G Y</span></h1>
+        <p class="hero-role">
+          <span class="typed-text" id="typed-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          Information Science Engineering student with strong foundations in cloud computing, DevOps, and full-stack development. Passionate about designing scalable, reliable systems and solving real-world engineering challenges.
+        </p>
+        <div class="hero-socials">
+          <a href="mailto:prurneshgowda@gmail.com" class="social-link" id="social-email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="https://linkedin.com/in/poornesh-gowda-g-y-a6ab41331" target="_blank" rel="noopener" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="social-link" id="social-github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="tel:+917019298140" class="social-link" id="social-phone" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.29 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 7019298140
+          </a>
+        </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">View My Projects</a>
+          <a href="poornesh_resume.pdf" target="_blank" rel="noopener" class="btn btn-outline" id="cta-resume">📄 View Resume</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring hero-image-ring-2"></div>
+        <div class="hero-image-crop">
+          <img src="pornesh photo.jpeg" alt="Poornesh Gowda G Y" class="hero-image" id="hero-profile-img" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Who Am I?</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-desc">
+            I am an <strong>Information Science Engineering</strong> student at <strong>Nitte Meenakshi Institute of Technology</strong>, Bengaluru (CGPA: 9.07/10), with strong foundations in cloud computing, DevOps, and full-stack development.
+          </p>
+          <p class="about-desc">
+            I have demonstrated expertise in <strong>AWS, Docker, Kubernetes, and CI/CD pipelines</strong>, with practical experience designing, building, and deploying end-to-end systems across cloud and local infrastructure.
+          </p>
+          <p class="about-desc">
+            I'm passionate about designing <strong>scalable, reliable systems</strong> and solving real-world engineering challenges through data-driven thinking and clean architecture.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">9.07</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card" id="education-card">
+            <h3 class="detail-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              Education
+            </h3>
+            <div class="education-list">
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-info">
+                  <h4>B.E. in Information Science &amp; Engineering</h4>
+                  <p class="edu-inst">Nitte Meenakshi Institute of Technology, Bengaluru</p>
+                  <span class="edu-meta">2023 – 2027 &nbsp;|&nbsp; CGPA: 9.07/10</span>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-info">
+                  <h4>Pre University Course (PUC)</h4>
+                  <p class="edu-inst">Master Pre University College, Hassan</p>
+                  <span class="edu-meta">2022 – 2023 &nbsp;|&nbsp; 93.15%</span>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-info">
+                  <h4>Secondary School Leaving Certificate (SSLC)</h4>
+                  <p class="edu-inst">Vijaya School, Hassan</p>
+                  <span class="edu-meta">2020 – 2021 &nbsp;|&nbsp; 83.04%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-card" id="achievements-card">
+            <h3 class="detail-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              Achievements
+            </h3>
+            <ul class="achievement-list">
+              <li>🥉 Bronze Medal — National Level Netball Championship, 2025</li>
+              <li>🏆 Finalist — Odoo Hackathon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" id="skill-languages">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">🧠</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-databases">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Databases &amp; APIs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-backend">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Backend &amp; Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS (EC2, S3, IAM)</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-devops">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">🚀</span>
+            <h3>DevOps &amp; Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-platforms">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Platforms &amp; Web</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">React.js</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-core">
+          <div class="skill-category-header">
+            <span class="skill-cat-icon">📚</span>
+            <h3>Core Subjects</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">DBMS (SQL)</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">Operating Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" id="project-crop">
+          <div class="project-card-top">
+            <div class="project-icon">🌾</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="project-link-icon" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Crop Yield Prediction &amp; Cloud Benchmarking</h3>
+          <p class="project-status ongoing">● Ongoing</p>
+          <p class="project-desc">
+            A dynamic crop yield prediction system with user-configurable input parameters, leveraging Random Forest and XGBoost models to deliver prediction accuracies of 87% and 89%. Deployed on AWS Elastic Beanstalk with Docker containerization enabling scalable cloud configurations.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">87–89% Prediction Accuracy</span>
+            <span class="highlight">Latency reduced by 90%</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Python</span>
+            <span class="tag">#RandomForest</span>
+            <span class="tag">#XGBoost</span>
+            <span class="tag">#Docker</span>
+            <span class="tag">#EC2</span>
+            <span class="tag">#AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-vprofile">
+          <div class="project-card-top">
+            <div class="project-icon">☁️</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="project-link-icon" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">VProfile GitOps Deployment</h3>
+          <p class="project-status">● 2026</p>
+          <p class="project-desc">
+            Provisioned AWS infrastructure using Terraform. Deployed a Java application on Amazon EKS with Docker, Kubernetes, and Helm, reducing manual environment setup time by 90%. Built a CI/CD pipeline leveraging Jenkins, Maven, SonarQube, and Nexus, resulting in 80% reduction in build-to-deploy time.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">90% Setup Time Reduction</span>
+            <span class="highlight">80% Faster CI/CD Pipeline</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#AWS</span>
+            <span class="tag">#Kubernetes</span>
+            <span class="tag">#Terraform</span>
+            <span class="tag">#ArgoCD</span>
+            <span class="tag">#Jenkins</span>
+            <span class="tag">#GitOps</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-marketpulse">
+          <div class="project-card-top">
+            <div class="project-icon">📈</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="project-link-icon" title="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://market-pulse-real-time-stock-market.vercel.app/" target="_blank" rel="noopener" class="project-link-icon" title="Live Deployment">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">MarketPulse — Stock Market Platform</h3>
+          <p class="project-status">● 2026</p>
+          <p class="project-desc">
+            Full-stack stock market analysis platform implementing secure JWT authentication and CRUD operations for portfolio management, watchlists, and user profiles. Integrated RESTful APIs for real-time stock data, company news, and historical price charts with role-based access control.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">Real-time Financial Insights</span>
+            <span class="highlight">JWT Auth + Role-Based Access</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#React.js</span>
+            <span class="tag">#Node.js</span>
+            <span class="tag">#MongoDB</span>
+            <span class="tag">#REST APIs</span>
+            <span class="tag">#Express.js</span>
+            <span class="tag">#JWT</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-disasteralert">
+          <div class="project-card-top">
+            <div class="project-icon">🚨</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21/ai-disaster-alert-system" target="_blank" rel="noopener" class="project-link-icon" title="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Disaster Alert System</h3>
+          <p class="project-status">● 2026</p>
+          <p class="project-desc">
+            Real-time AI-powered disaster monitoring and early warning alert system designed to process critical environmental data, detect emergency situations, and trigger high-priority alerts for response teams.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">Real-time Emergency Monitoring</span>
+            <span class="highlight">Automated AI Detection</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Python</span>
+            <span class="tag">#AI</span>
+            <span class="tag">#MachineLearning</span>
+            <span class="tag">#DisasterAlert</span>
+            <span class="tag">#API</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-bankingsystem">
+          <div class="project-card-top">
+            <div class="project-icon">🏦</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21/Bnaking_system" target="_blank" rel="noopener" class="project-link-icon" title="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://bnaking-system.vercel.app/" target="_blank" rel="noopener" class="project-link-icon" title="Live Deployment">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Banking System</h3>
+          <p class="project-status">● 2026</p>
+          <p class="project-desc">
+            Secure banking application implementing core financial operations including user authentication, deposit/withdrawal processing, funds transfer between accounts, and transaction audit logs with database integrity.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">Secure Account Management</span>
+            <span class="highlight">Transaction Audit Logs</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#Java</span>
+            <span class="tag">#SQL</span>
+            <span class="tag">#DBMS</span>
+            <span class="tag">#Banking</span>
+            <span class="tag">#Security</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-awscicd">
+          <div class="project-card-top">
+            <div class="project-icon">🔄</div>
+            <div class="project-links">
+              <a href="https://github.com/PoorneshGowda21/AWS-CI-CD-pipeline-" target="_blank" rel="noopener" class="project-link-icon" title="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AWS CI/CD Pipeline</h3>
+          <p class="project-status">● 2026</p>
+          <p class="project-desc">
+            Comprehensive continuous integration and deployment pipeline engineered on AWS, automating source code testing, container image creation, security vulnerability scanning, and seamless deployment to cloud infrastructure.
+          </p>
+          <div class="project-highlights">
+            <span class="highlight">Automated Cloud Builds</span>
+            <span class="highlight">Zero-Downtime Deployment</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">#AWS</span>
+            <span class="tag">#DevOps</span>
+            <span class="tag">#CICD</span>
+            <span class="tag">#Docker</span>
+            <span class="tag">#GitHubActions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What I've Earned</p>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" id="cert-aws">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-info">
+            <h3>AWS Cloud Foundations</h3>
+            <p>AWS Academy</p>
+          </div>
+          <span class="cert-badge">Verified</span>
+        </div>
+        <div class="cert-card" id="cert-devops">
+          <div class="cert-icon">🔧</div>
+          <div class="cert-info">
+            <h3>Decoding DevOps — From Basics to Advanced Projects with AI</h3>
+            <p>Udemy</p>
+          </div>
+          <span class="cert-badge">Verified</span>
+        </div>
+        <div class="cert-card" id="cert-mern">
+          <div class="cert-icon">⚡</div>
+          <div class="cert-info">
+            <h3>Full Stack Web Development (MERN Stack)</h3>
+            <p>Udemy</p>
+          </div>
+          <span class="cert-badge">Verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Let's Talk</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">I'm always open to discussing new opportunities, interesting projects, or just a friendly chat!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Direct Contact</h3>
+          <div class="contact-links">
+            <a href="mailto:prurneshgowda@gmail.com" class="contact-link" id="contact-email">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">prurneshgowda@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/poornesh-gowda-g-y-a6ab41331" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Poornesh Gowda</span>
+              </div>
+            </a>
+            <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">PoorneshGowda21</span>
+              </div>
+            </a>
+            <a href="tel:+917019298140" class="contact-link" id="contact-phone">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.29 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 7019298140</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <h3 class="contact-info-title">Send a Message</h3>
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" placeholder="What would you like to discuss?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-success" id="form-success" style="display:none;">✅ Message sent! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">&lt;Poornesh/&gt;</p>
+      <p class="footer-copy">Designed &amp; Built by <strong>Poornesh Gowda G Y</strong> &copy; 2026</p>
+      <div class="footer-socials">
+        <a href="mailto:prurneshgowda@gmail.com" class="footer-social" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/poornesh-gowda-g-y-a6ab41331" target="_blank" rel="noopener" class="footer-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/PoorneshGowda21" target="_blank" rel="noopener" class="footer-social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="tel:+917019298140" class="footer-social" aria-label="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.29 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
